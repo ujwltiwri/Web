@@ -1,3 +1,28 @@
+//Function Without Return Type
+function name() {
+  console.log("Function Without Return Type");
+}
+
+name(); // called name function
+// #######################################
+
+//Function With Return Type
+function subtraction(num1, num2) {
+  return num1 - num2;
+}
+
+console.log(subtraction(40, 50)); //subtraction function called
+
+//Another Eg Function With Return Type
+
+function additions(add1, add2) {
+  return add1 + add2;
+}
+
+let sums = additions(10, 23);
+
+console.log(sums);
+
 // Declaratin of a function in a variable is also possible JS
 // That's Why
 // In JS functions are called First Class Citizens
