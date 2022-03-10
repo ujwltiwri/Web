@@ -14,21 +14,58 @@ let objec = {
   "Phone Number": 8219703902,
 };
 
-console.log(objec);
+// console.log(objec);
 
 //Nested Object and Printing Almost Every Type of Values in JS
 let CapAmerica = {
   Name: "Steve",
   Age: 99,
   Friends: ["Natasha", "Thor", "Iron Man", "Hulk"], // Using Array in Object
+  iscapAmerica: false, // Boolean
   address: {
     // Obj Within Obj
     State: "Washington DC",
     City: "Queens",
   },
   hello: function () {
-    console.log("Hello World");
+    console.log("New Function in Object");
   },
 };
 
+// console.log(CapAmerica);
+
+// Accesing Only Required keys and values from an object
+console.log("Accessed Name: " + CapAmerica.Name);
+console.log("Accessed Array: " + CapAmerica.Friends);
+console.log("Accessed Object With Object: " + CapAmerica.address.City);
+// Accessed Function
+CapAmerica.hello();
+
+// Add a new Key to Object
+console.log("Object Before Update: ", CapAmerica);
+//to add a new key just write obj name with . operator and key name after that
+CapAmerica.Movies = "Ultron, Iron Man, The Hulk, Thor, Endgame";
+console.log("Object After Update: ", CapAmerica);
+// ######################################################################
+
+// Delete a Key From an Object
+console.log("Object Before Delete: ", CapAmerica);
+delete CapAmerica.Movies;
+console.log("Object After Delete: ", CapAmerica);
+// #######################################################################
+
+//Update Key in Object
+CapAmerica.iscapAmerica = true;
+CapAmerica.Name = "Peter Parker";
+CapAmerica.address.State = "Jharkhand";
 console.log(CapAmerica);
+// #######################################################################
+
+//Methods to access a key
+// 1. dot (.) Operator
+console.log(CapAmerica.Name);
+
+// 2. In this method we are using [] (bracket notation). Here we are converting the name to string, cuz by default if we
+// don't make it a string then it will consider whatever written b/w [ujjwal] this
+// as a variable inside the obj and start searching as a var in that object
+console.log(CapAmerica["Name"]);
