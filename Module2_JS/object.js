@@ -62,10 +62,10 @@ console.log(CapAmerica);
 // #######################################################################
 
 //Methods to access a key
-// 1. dot (.) Operator
+// 1. dot (.) Operator. Here Whatever is written after dot is considered as String
 console.log(CapAmerica.Name);
 
-// 2. In this method we are using [] (bracket notation). Here we are converting the name to string, cuz by default if we
+// 2. In this method we are using [] (bracket notation). Here have to convert whatever we write inside bracket notation to string to access a key, cuz by default if we
 // don't make it a string then it will consider whatever written b/w [ujjwal] this
 // as a variable inside the obj and start searching as a var in that object
 console.log(CapAmerica["Name"]);
