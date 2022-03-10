@@ -29,4 +29,4 @@ console.log(fs.readFileSync(newFile, "utf-8"));
 
 // 4 -> Delete
 
-let deletefile = fs.unlinkSync(newFile);
+// let deletefile = fs.unlinkSync(newFile);
